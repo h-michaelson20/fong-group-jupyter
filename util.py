@@ -165,7 +165,7 @@ def downloadPS1(coord,  filt, outdir='data/'):
         prodList = prodList[prodList['description']=='stack data image']
 
         message = 'We need to download {n} PS1 images.'
-        print(message.format(n=len(prodList)))
+      //  print(message.format(n=len(prodList)))
 
         for product in prodList:
             filename = product['productFilename']
@@ -174,7 +174,7 @@ def downloadPS1(coord,  filt, outdir='data/'):
             url += product['dataURI']
             if os.path.isfile(outfile):
                 message = '{filename} exists.  Continuing...'
-                print(message.format(filename=outfile))
+              //  print(message.format(filename=outfile))
                 return(outfile)
             else:
                 errflag = download_url_to_file(url, outfile)
