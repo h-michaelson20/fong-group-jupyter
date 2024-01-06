@@ -1,0 +1,20 @@
+# requirements.txt
+
+# Jupyter-related dependencies
+ipython
+ipywidgets
+
+# Matplotlib and related libraries
+matplotlib
+numpy
+
+# Astropy and related libraries
+astropy
+astroplan
+
+# Other dependencies
+pandas
+pytz
+
+# Dust map library
+dustmaps
